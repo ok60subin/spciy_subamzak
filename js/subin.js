@@ -11,24 +11,24 @@
  }
  document.oncontextmenu = hideMenu;
 
- function setOnlyID(id) {
-     object = document.getElementById(id);
-     var all = document.getElementsByTagName('section')
-     for (var i = 0; i < all.length; i++)
-         all[i].style.display = 'none';
-     object.style.display = 'block';
-     resizeBar();
- }
+//  function setOnlyID(id) {
+//      object = document.getElementById(id);
+//      var all = document.getElementsByTagName('section')
+//      for (var i = 0; i < all.length; i++)
+//          all[i].style.display = 'none';
+//      object.style.display = 'block';
+//      resizeBar();
+//  }
 
- function setOnlyClass(cls) {
-     objects = document.getElementsByClassName(cls);
-     var all = document.getElementsByTagName('section')
-     for (var i = 0; i < all.length; i++)
-         all[i].style.display = 'none';
-     for (var i = 0; i < objects.length; i++)
-         objects[i].style.display = 'block';
-     resizeBar();
- }
+//  function setOnlyClass(cls) {
+//      objects = document.getElementsByClassName(cls);
+//      var all = document.getElementsByTagName('section')
+//      for (var i = 0; i < all.length; i++)
+//          all[i].style.display = 'none';
+//      for (var i = 0; i < objects.length; i++)
+//          objects[i].style.display = 'block';
+//      resizeBar();
+//  }
 
  function openOne() {
      var all = document.getElementsByTagName("details");
@@ -51,6 +51,5 @@
  }
 
  function loadHome() {
-    setOnlyClass('homes');
     setInterval('changeImg()', 1000);
  }

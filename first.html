@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>★ 수밤작 ★</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/subin.js"></script>
+    <style>
+        @import url("css/subin.css");
+    </style>
+</head>
+
+<body>
+    <header id="small_bar">
+        <ul>
+            <a href="subin.html">
+                <li style="float:left; ">
+                    <div>대문</div>
+                </li>
+            </a>
+            <a href="./linetracer.html" onclick="setOnlyID('competition');">
+                <li style="float:right;">라트 실적</li>
+            </a>
+            <a href="./department.html" onclick="setOnlyID('department');">
+                <li style="float:right;"> 학과 소개</li>
+            </a>
+        </ul>
+    </header>
+
+    <aside id="big_bar">
+        <nav>
+            <p style="font:bold 40px 'sunflower', san-serif;">
+
+                { 수밤작 } <br><br>★ <br>
+                <div style="font:bold 23px 'sunflower' ,san-serif; text-align: center;">수<span>빈이</span> 밤<span>샘</span>
+                    작<span>업들</span></div>
+
+            </p>
+
+            <hr style="background:mistyrose; height:1px; width:150px;">
+            <div>
+
+                <ul>
+                    <li>
+                        <details onclick="openOne()">
+                            <summary> 학과에 따라 </summary>
+                            <ul>
+                                <a href="./major.html">
+                                    <li>주 전공</li>
+                                </a>
+                                <a href="./minor.html">
+                                    <li>복수 전공</li>
+                                </a>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details onclick="openOne()">
+                            <summary> 학년에 따라 </summary>
+                            <ul>
+                                <a href="./first.html">
+                                    <li>1학년</li>
+                                </a>
+                                <a href="./second.html">
+                                    <li>2학년</li>
+                                </a>
+                                <a href="./third.html" >
+                                    <li>3학년</li>
+                                </a>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details onclick="openOne()">
+                            <summary> 분야에 따라 </summary>
+                            <ul>
+                                <a href="./mechanics.html">
+                                    <li>기계공학</li>
+                                </a>
+                                <a href="./electronics.html">
+                                    <li>전자공학</li>
+                                </a>
+                                <a href="./computer.html">
+                                    <li>컴퓨터공학</li>
+                                </a>
+                            </ul>
+                        </details>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <article id="contents">
+
+        <!--창설 -->
+        <section class="first ">
+            <h2>창의 설계입문</h2>
+            <hr>
+            <h4>태양전지 자동차</h4>
+            <h5>개요</h5>
+            <p>
+                아직 1학년이므로, 전공 지식이 부족해 태양전지 자동차 키트를 이용하여 하드웨어만 재활용품을 이용해 제작해본다.
+                전체 하드웨어의 무게, 디자인을 가중치에 따라 점수를 매긴다. 총 2번의 경기 순위도 성적에 포함된다.
+                무게와 공기저항을 줄일 수 있는 재활용품으로 빨대를 선택했다.
+            </p>
+            <h5>만드는 과정</h5>
+            <div>
+                <img src="img/suncar.png" alt="suncar" style="width:700px; height:1100px;">
+            </div>
+            <h5>완성작</h5>
+            <div>
+                <img src="img/suncar2.png" alt="suncar2" style="width:500px; height:300px;">
+            </div>
+            <h5>결과</h5>
+            <p>
+                무게는 0.09kg으로 측정되었다.
+                경주 시간을 정오로 착각해 태양열 패널을 0도로 밀착해 부착했는데, 오후 3시였어서 태양열을 많이 받지 못해 출력이 약해져 낭패를 봤다.
+                또한 바퀴가 많이 정교하지 못해 앞으로 갈 수록 방향이 휘어져 도로를 이탈했다.
+                1 경기 4등, 2 경기 7등으로 마무리 했다.
+            </p>
+        </section>
+
+        <!-- 학과 소개-->
+        <section name="depart" id="department">
+            <h2>학과 소개</h2>
+            <hr>
+            <div><img src="img/mechatronics.PNG" alt="mecha"></div>
+            <h4>메카트로닉스 공학과?</h4>
+            <p>
+                메카트로닉스(Mechatronics)는 <mark style="background:lightgray;">기계공학(Mechanics)과 전자공학(Electronics)의
+                    합성어</mark>로 컴퓨터 제어 및 정보처리 기술 등과 같은 전자공학에서 발전시킨 기술을 기계공학에 적용하는 새로운 기술 분야이다.
+                <br><br>
+                교양과목(수학, 물리학, 프로그래밍언어 등)을 통해 공학의 기초 소양을 쌓고, 동역학, 고체역학, 기계공작법, 전자회로실험, 디지털회로실험 등을 전공 기초과목으로 이수한 후
+                기계시스템, 전기전자시스템, 컴퓨터시스템, 융합시스템 분야로 나누어진 메카트로닉스공학의 응용기술을 배운다.
+                이처럼 메카트로닉스공학과 전공과정에서는 기계 및 전자시스템의 특성을 이해하고 컴퓨터제어시스템 분석 및 설계에 관한 체험적 전문지식을 습득할 수 있도록 이론과 실습을 겸비한 종합적인 교육을
+                실시한다.
+                <br>
+                <a href="#" onclick="javascript:window.open('https://mec.cnu.ac.kr/medc/index.do','Mecha!','')" style="color:dimgray; float:right;">학과 바로가기</a>
+            </p>
+            <br><br>
+            <div><img src="img/gukbang.PNG" alt="gukbang"></div>
+            <h4>국방무인 시스템 공학과?</h4>
+            <p>
+                국방 무인 시스템과 관련한 <mark style="background:lightgray;">기계 및 전기/전자 요소 기술에 대한 기본적 이해를 바탕으로 관련된 SW를 창의적으로 설계
+                    제작</mark>할 수 있는 실무형 인력 양성을 목표로 하는 과정이다.
+                <br><br>
+                2개 이상의 학과·학부·전공 간 합의하여 융합학문 교육을 위해 운영하는 전공과정으로 본 과인 메카트로닉스공학과와 컴퓨터 융합학부의 교육과정을 연계해 듣는 과정이다.
+                메카트로닉스공학과에서는 수치해석, 디지털 회로실습, 인공지능 개론등이 속하며 컴퓨터 융합학부 과정에서는 모바일 프로그래밍, 웹 프로그래밍, 고급JAVA 프로그램 등이 있다.
+                <br>
+                <a href="#" onclick="javascript:window.open('http://wise.cnu.ac.kr/','Gukbang!','')" style="color:dimgray; float:right;">사업단 바로가기</a>
+
+            </p>
+
+
+        </section>
+
+    </article>
+</body>
+
+</html>

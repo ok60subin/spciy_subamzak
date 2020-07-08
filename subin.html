@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>★ 수밤작 ★</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/subin.js"></script>
+    <style>
+        @import url("css/subin.css");
+    </style>
+</head>
+
+<body onload="loadHome()">
+    <header id="small_bar">
+        <ul>
+            <a href="subin.html">
+                <li style="float:left; ">
+                    <div>대문</div>
+                </li>
+            </a>
+            <a href="./linetracer.html" onclick="setOnlyID('competition');">
+                <li style="float:right;">라트 실적</li>
+            </a>
+            <a href="./department.html" onclick="setOnlyID('department');">
+                <li style="float:right;"> 학과 소개</li>
+            </a>
+        </ul>
+    </header>
+
+    <aside id="big_bar">
+        <nav>
+            <p style="font:bold 40px 'sunflower', san-serif;">
+
+                { 수밤작 } <br><br>★ <br>
+                <div style="font:bold 23px 'sunflower' ,san-serif; text-align: center;">수<span>빈이</span> 밤<span>샘</span>
+                    작<span>업들</span></div>
+
+            </p>
+
+            <hr style="background:mistyrose; height:1px; width:150px;">
+            <div>
+
+                <ul>
+                    <li>
+                        <details onclick="openOne()">
+                            <summary> 학과에 따라 </summary>
+                            <ul>
+                                <a href="./major.html">
+                                    <li>주 전공</li>
+                                </a>
+                                <a href="./minor.html">
+                                    <li>복수 전공</li>
+                                </a>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details onclick="openOne()">
+                            <summary> 학년에 따라 </summary>
+                            <ul>
+                                <a href="./first.html">
+                                    <li>1학년</li>
+                                </a>
+                                <a href="./second.html">
+                                    <li>2학년</li>
+                                </a>
+                                <a href="./third.html" >
+                                    <li>3학년</li>
+                                </a>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details onclick="openOne()">
+                            <summary> 분야에 따라 </summary>
+                            <ul>
+                                <a href="./mechanics.html">
+                                    <li>기계공학</li>
+                                </a>
+                                <a href="./electronics.html">
+                                    <li>전자공학</li>
+                                </a>
+                                <a href="./computer.html">
+                                    <li>컴퓨터공학</li>
+                                </a>
+                            </ul>
+                        </details>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <article id="contents">
+        <!--대문 -->
+        <section class="homes">
+            <h2 style="color:tomato; font:bold 30px 'Gaegu';">
+                < 수빈이 작업관>
+            </h2>
+            <div style="margin-top:0px;">
+                <img id="bigdoor" src="img/spider.jpg" alt="home" style="width:500px; height:300px; margin-top:0;">
+            </div>
+
+            <p style="font: bold 24px 'Gaegu', cursive; text-align: center; margin:10px">
+                대학교에 입학하고 부터 시작해 진행해봤던 프로젝트들을 한 군데 모아놓은 포트폴리오 형 웹문서에오
+            </p>
+            <p style="font: bold 25px 'Gaegu', cursive; text-align: center; margin:0">
+                예쁘게 봐주세오.
+            </p>
+
+        </section>
+
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>★ 수밤작 ★</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/subin.js"></script>
+    <style>
+        @import url("css/subin.css");
+    </style>
+</head>
+
+<body>
+    <header id="small_bar">
+        <ul>
+            <a href="subin.html">
+                <li style="float:left; ">
+                    <div>대문</div>
+                </li>
+            </a>
+            <a href="./linetracer.html" onclick="setOnlyID('competition');">
+                <li style="float:right;">라트 실적</li>
+            </a>
+            <a href="./department.html" onclick="setOnlyID('department');">
+                <li style="float:right;"> 학과 소개</li>
+            </a>
+        </ul>
+    </header>
+
+    <aside id="big_bar">
+        <nav>
+            <p style="font:bold 40px 'sunflower', san-serif;">
+
+                { 수밤작 } <br><br>★ <br>
+                <div style="font:bold 23px 'sunflower' ,san-serif; text-align: center;">수<span>빈이</span> 밤<span>샘</span>
+                    작<span>업들</span></div>
+
+            </p>
+
+            <hr style="background:mistyrose; height:1px; width:150px;">
+            <div>
+
+                <ul>
+                    <li>
+                        <details onclick="openOne()">
+                            <summary> 학과에 따라 </summary>
+                            <ul>
+                                <a href="./major.html">
+                                    <li>주 전공</li>
+                                </a>
+                                <a href="./minor.html">
+                                    <li>복수 전공</li>
+                                </a>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details onclick="openOne()">
+                            <summary> 학년에 따라 </summary>
+                            <ul>
+                                <a href="./first.html">
+                                    <li>1학년</li>
+                                </a>
+                                <a href="./second.html">
+                                    <li>2학년</li>
+                                </a>
+                                <a href="./third.html" >
+                                    <li>3학년</li>
+                                </a>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details onclick="openOne()">
+                            <summary> 분야에 따라 </summary>
+                            <ul>
+                                <a href="./mechanics.html">
+                                    <li>기계공학</li>
+                                </a>
+                                <a href="./electronics.html">
+                                    <li>전자공학</li>
+                                </a>
+                                <a href="./computer.html">
+                                    <li>컴퓨터공학</li>
+                                </a>
+                            </ul>
+                        </details>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <article id="contents">
+
+        <!--기공실 -->
+        <section class="major second mechanical">
+            <h2>기계공작 실습</h2>
+            <hr>
+            <h4>개요</h4>
+            <p>
+                주어진 도면에 따라 각기 다른 도구들을 통해 과제를 수행한다.
+            </p>
+            <h4>선반</h4>
+            <p>
+                회전하는 원통형 재료를 깎는다.
+                재료가 회전하고, 드릴은 고정된 채 축이 이동하는 방식이다.
+            </p>
+            <h5>도면</h5>
+            <div>
+                <img src="img/sun_do1.png" alt="sun_do1">
+                <img src="img/sun_do2.png" alt="sun_do2">
+                <img src="img/sun_do3.png" alt="sun_do3">
+            </div>
+            <h5>결과</h5>
+            <div>
+                <img src="img/sun1.png" alt="sun1">
+                <img src="img/sun2.png" alt="sun2">
+                <img src="img/sun3.png" alt="sun3">
+            </div>
+            <h5>결합</h5>
+            <div>
+                <img src="img/sun.png" alt="sun" style="width:400px;">
+            </div>
+
+            <h4>밀링</h4>
+            <p>
+                고정된 평평한 재료를 깎는다.
+                재료는 고정되어 있고, 드릴이 회전하며 축이 이동한다.
+            </p>
+            <h5>도면</h5>
+            <div>
+                <img src="img/mil_do1.png" alt="mil_do1">
+                <img src="img/mil_do2.png" alt="mil_do2">
+                <img src="img/mil_do3.png" alt="mil_do3">
+            </div>
+            <h5>결과</h5>
+            <div>
+                <img src="img/mil12.png" alt="mil12" style="width:400px;">
+                <img src="img/mil3.png" alt="mil3" style="width:400px;">
+            </div>
+
+            <h4>용접</h4>
+            <p>
+                여러 용접 방식중 아크 용접을 실습한다. 감전되지 않게 조심하며 순서를 잘 지켜야 한다.
+                수평각도와 수직각도를 잘 지키며 실습한다.
+            </p>
+            <h5>방법</h5>
+            <div>
+                <img src="img/yong_do1.png" alt="yong_do1">
+                <img src="img/yong_do2.png" alt="yong_do2">
+                <img src="img/yong_do3.png" alt="yong_do3">
+            </div>
+            <h5>결과</h5>
+            <div>
+                <img src="img/yong1.png" alt="yong1">
+                <img src="img/yong2.png" alt="yong2">
+                <img src="img/yong3.png" alt="yong3">
+            </div>
+        </section>
+
+        <!-- 컴응 -->
+        <section class="major second mechanical">
+            <h2>컴퓨터 응용 제도</h2>
+            <hr>
+            <h4>Parametic CREO</h4>
+            <h5>Hand blender</h5>
+            <p>
+                Parametic CREO를 이용 해 실측한 [핸드 블렌더]를 모델링 했다.
+                볼트, 너트 등 체결 부품들을 실제 사이즈에 맞게 모델링하고, 외형과 내형도 곡선 부분을 매끄럽게 모델링한다.
+                어셈블을 통해 모델링된 각 부품들이 서로 맞는지 확인하고, 맞닿는 면이나 축을 통해 부품을 고정한다.
+                완벽히 고정된 부품들을 메카니즘을 통해 구동을 확인하고, 애니메이션을 제작한다.
+                프로젝트 기준이 부품이 40개 이상이었고, 메카니즘이 확실히 보여야 했기 때문에 적절하게 핸드 블렌더를 선택했다.
+            </p>
+
+            <h5>메카니즘 구동 영상 및 애니메이션 영상</h5>
+            <p>
+                모터와 체결부품들의 메카니즘 영상과 3D 조립 모습을 보여주는 애니메이션 영상이다.
+            </p>
+
+            <div>
+                <iframe width="350px" height="200px" src="https://www.youtube.com/embed/Ly2JFjQIsgU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="350px" height="200px" src="https://www.youtube.com/embed/0ZHs2ZHt4M4?list=PLxdB5m160EjRX6fsFnJJ2dcFpma_ApuIS" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+    </article>
+</body>
+
+</html>

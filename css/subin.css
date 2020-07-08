@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu|Nanum+Gothic|Poor+Story|Sunflower:300&display=swap');
+
 hr {
     border: none;
 }
@@ -31,12 +33,13 @@ nav {
 
 #big_bar {
     width: 250px;
+    height:100%;
     background-color: lightsalmon;
     color: white;
     text-align: center;
     padding-top: 30px;
     display: inline-block;
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: 0px;
     z-index: 5;

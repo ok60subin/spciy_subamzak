@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>★ 수밤작 ★</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/subin.js"></script>
+    <style>
+        @import url("css/subin.css");
+    </style>
+</head>
+
+<body onload="loadHome()">
+    <header id="small_bar">
+        <ul>
+            <a href="subin.html">
+                <li style="float:left; ">
+                    <div>대문</div>
+                </li>
+            </a>
+            <a href="./linetracer.html" onclick="setOnlyID('competition');">
+                <li style="float:right;">라트 실적</li>
+            </a>
+            <a href="./department.html" onclick="setOnlyID('department');">
+                <li style="float:right;"> 학과 소개</li>
+            </a>
+        </ul>
+    </header>
+
+    <aside id="big_bar">
+        <nav>
+            <p style="font:bold 40px 'sunflower', san-serif;">
+
+                { 수밤작 } <br><br>★ <br>
+                <div style="font:bold 23px 'sunflower' ,san-serif; text-align: center;">수<span>빈이</span> 밤<span>샘</span>
+                    작<span>업들</span></div>
+
+            </p>
+
+            <hr style="background:mistyrose; height:1px; width:150px;">
+            <div>
+
+                <ul>
+                    <li>
+                        <details onclick="openOne()">
+                            <summary> 학과에 따라 </summary>
+                            <ul>
+                                <a href="./major.html">
+                                    <li>주 전공</li>
+                                </a>
+                                <a href="./minor.html">
+                                    <li>복수 전공</li>
+                                </a>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details onclick="openOne()">
+                            <summary> 학년에 따라 </summary>
+                            <ul>
+                                <a href="./first.html">
+                                    <li>1학년</li>
+                                </a>
+                                <a href="./second.html">
+                                    <li>2학년</li>
+                                </a>
+                                <a href="./third.html" >
+                                    <li>3학년</li>
+                                </a>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details onclick="openOne()">
+                            <summary> 분야에 따라 </summary>
+                            <ul>
+                                <a href="./mechanics.html">
+                                    <li>기계공학</li>
+                                </a>
+                                <a href="./electronics.html">
+                                    <li>전자공학</li>
+                                </a>
+                                <a href="./computer.html">
+                                    <li>컴퓨터공학</li>
+                                </a>
+                            </ul>
+                        </details>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <article id="contents">
+
+        <!--기공실 -->
+        <section class="major second mechanical">
+            <h2>기계공작 실습</h2>
+            <hr>
+            <h4>개요</h4>
+            <p>
+                주어진 도면에 따라 각기 다른 도구들을 통해 과제를 수행한다.
+            </p>
+            <h4>선반</h4>
+            <p>
+                회전하는 원통형 재료를 깎는다.
+                재료가 회전하고, 드릴은 고정된 채 축이 이동하는 방식이다.
+            </p>
+            <h5>도면</h5>
+            <div>
+                <img src="img/sun_do1.png" alt="sun_do1">
+                <img src="img/sun_do2.png" alt="sun_do2">
+                <img src="img/sun_do3.png" alt="sun_do3">
+            </div>
+            <h5>결과</h5>
+            <div>
+                <img src="img/sun1.png" alt="sun1">
+                <img src="img/sun2.png" alt="sun2">
+                <img src="img/sun3.png" alt="sun3">
+            </div>
+            <h5>결합</h5>
+            <div>
+                <img src="img/sun.png" alt="sun" style="width:400px;">
+            </div>
+
+            <h4>밀링</h4>
+            <p>
+                고정된 평평한 재료를 깎는다.
+                재료는 고정되어 있고, 드릴이 회전하며 축이 이동한다.
+            </p>
+            <h5>도면</h5>
+            <div>
+                <img src="img/mil_do1.png" alt="mil_do1">
+                <img src="img/mil_do2.png" alt="mil_do2">
+                <img src="img/mil_do3.png" alt="mil_do3">
+            </div>
+            <h5>결과</h5>
+            <div>
+                <img src="img/mil12.png" alt="mil12" style="width:400px;">
+                <img src="img/mil3.png" alt="mil3" style="width:400px;">
+            </div>
+
+            <h4>용접</h4>
+            <p>
+                여러 용접 방식중 아크 용접을 실습한다. 감전되지 않게 조심하며 순서를 잘 지켜야 한다.
+                수평각도와 수직각도를 잘 지키며 실습한다.
+            </p>
+            <h5>방법</h5>
+            <div>
+                <img src="img/yong_do1.png" alt="yong_do1">
+                <img src="img/yong_do2.png" alt="yong_do2">
+                <img src="img/yong_do3.png" alt="yong_do3">
+            </div>
+            <h5>결과</h5>
+            <div>
+                <img src="img/yong1.png" alt="yong1">
+                <img src="img/yong2.png" alt="yong2">
+                <img src="img/yong3.png" alt="yong3">
+            </div>
+        </section>
+
+        <!-- 컴응 -->
+        <section class="major second mechanical">
+            <h2>컴퓨터 응용 제도</h2>
+            <hr>
+            <h4>Parametic CREO</h4>
+            <h5>Hand blender</h5>
+            <p>
+                Parametic CREO를 이용 해 실측한 [핸드 블렌더]를 모델링 했다.
+                볼트, 너트 등 체결 부품들을 실제 사이즈에 맞게 모델링하고, 외형과 내형도 곡선 부분을 매끄럽게 모델링한다.
+                어셈블을 통해 모델링된 각 부품들이 서로 맞는지 확인하고, 맞닿는 면이나 축을 통해 부품을 고정한다.
+                완벽히 고정된 부품들을 메카니즘을 통해 구동을 확인하고, 애니메이션을 제작한다.
+                프로젝트 기준이 부품이 40개 이상이었고, 메카니즘이 확실히 보여야 했기 때문에 적절하게 핸드 블렌더를 선택했다.
+            </p>
+
+            <h5>메카니즘 구동 영상 및 애니메이션 영상</h5>
+            <p>
+                모터와 체결부품들의 메카니즘 영상과 3D 조립 모습을 보여주는 애니메이션 영상이다.
+            </p>
+
+            <div>
+                <iframe width="350px" height="200px" src="https://www.youtube.com/embed/Ly2JFjQIsgU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="350px" height="200px" src="https://www.youtube.com/embed/0ZHs2ZHt4M4?list=PLxdB5m160EjRX6fsFnJJ2dcFpma_ApuIS" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+        <!-- 전회실-->
+        <section class="major second electronics ">
+            <h2>전자회로 실험</h2>
+            <hr>
+            <h4>익스트림 오토매틱 핀볼</h4>
+            <p>
+                밝기 변화감지를 통해 공이 굴러왔음을 알고 자동으로 게임을 진행하는 핀볼이다.
+            </p>
+            <h5>구성</h5>
+            <p>
+                디지털 소자나 MCU 등을 일체 사용하지 않고 아날로그 소자만을 사용해 제작했다.
+                조도 센서를 사용 해 핀볼이 막대를 가리면 OP-AMP에 입력되는 전압이 전압분배 법칙에 의해 변화한다.
+                이를 통해 비교기에서 일정 센서값이 되면 가렸음을 인식하고, MOSFET에 신호를 준다.
+                MOSFET은 솔레노이드에 입력되는 전압을 증폭 시키기 위해 사용된다.
+            </p>
+            <h5>하드웨어</h5>
+            <p>왼쪽은 시뮬레이션 프로그램(orCAD)에 의해 분석된 회로도의 모습이고, 오른쪽은 구성한 실제 회로이다.</p>
+            <div>
+                <img src="img/pincircuit.png" alt="pincircuit1" style="width:350px; height:200px;">
+                <img src="img/pincircuit2.png" alt="pincircuit2" style="width:350px; height:200px;">
+            </div>
+            <h5>시연 영상</h5>
+            <p>
+                공이 부딪히며 내려와 막대에 닿으면 자동으로 솔레노이드가 동작 해 공을 다시 튕기는 것을 볼 수 있다.
+            </p>
+            <div>
+                <iframe width="300px" height="350px" src="https://www.youtube.com/embed/2rEfMC-9Wng?list=PLxdB5m160EjRX6fsFnJJ2dcFpma_ApuIS" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- 디회실-->
+        <section class="major second electronics ">
+            <h2>디지털회로 실험</h2>
+            <hr>
+            <h4>두더지 잡기</h4>
+            <p>
+                짝이 이뤄진 LED와 스위치를 통한 두더지 잡기 게임이다.
+                LED가 켜지는 것이 두더지가 올라왔음을 의미하고, 스위치를 누르는 것을 두더지를 잡는것을 의미한다.
+            </p>
+            <h5>구성</h5>
+            <p>
+                디지털 논리 소자들을 조합해 MCU 없이 논리를 조합한다.
+                555타이머 3개를 사용 해 주파수가 다른 2개의 펄스를 발생시키고, 2개의 펄스의 비해 느린 주파수의 펄스 하나를 발생시킨다.
+                2개의 빠른 펄스는 각각 JK-FlipFlop에 입력되어 0부터 하나씩 증가해 3까지 4bit를 가산기 출력을 뽑아낸다.
+                0부터 3까지 서로 다른 속도로 증가하는 두 세트가 느린 펄스를 받는 D-FlipFlop의 입력으로 들어가 값이 capture 된 채 유지된다.
+                이 값이 2 to 4 Decoder로 입력되어 한 비트씩 할당받게 되고, 이는 각각 서로 다른 AND 소자의 입력으로 들어간다.
+                스위치가 눌리면 VCC, 눌리지 않는 동안은 GND가 연결되게 회로를 연결 해놓고, 이 입력을 AND 소자의 나머지 입력으로 넣는다.
+                AND 소자의 출력을 모두 OR 소자로 묶어 하나의 비트로 나오게 한다.
+                D-FlipFlop의 출력은 AND 소자의 입력으로 들어가기도 하지만, 할당된 LED에 연결되기도 해 두더지 역할을 한다.
+                즉, OR 소자의 출력은 두더지 역할을 하는 LED가 켜졌을 때 사용자가 그에 맞는 스위치를 누를 때 1인 것이다.
+            </p>
+            <h5>하드웨어</h5>
+            <p>
+                3T의 MDF 커팅을 위한 레이져 커터를 사용하기 위해 AutoCAD로 작업한 2D 도면과 완성하고 난 후 회로 모습이다.
+            </p>
+            <div>
+                <img src="img/molcad.png" alt="moleCAD" style="width:350px; height:200px;">
+                <img src="img/molecircuit.png" alt="moleCIRCUIT" style="width:350px; height:200px;">
+            </div>
+            <h5>시연 영상</h5>
+            <p>
+                LED가 켜진 곳의 버튼이 눌렸을 때만 정답 LED가 켜지고, 이외에는 반응하지 않는 모습이다.
+                사람의 기준에서 랜덤이라 할 수 있는 확률로 한번에 2쌍의 LED가 켜지는 것을 볼 수 있다.
+            </p>
+            <div>
+                <iframe width="550px" height="350px"  src="https://www.youtube.com/embed/Ul241KD5F38?list=PLxdB5m160EjRX6fsFnJJ2dcFpma_ApuIS" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- 디지털 필터-->
+        <section class="major third electronics">
+            <h2>디지털 신호처리</h2>
+            <hr>
+            <h4> 상보필터</h4>
+            <p>
+                LPF와 HPF를 조합한 상보필터를 설계한다.
+            </p>
+            <h5>개요</h5>
+            <p>
+                차후에 개발자로서 한번쯤 자율주행 세그웨이를 만들어 보고 싶다는 생각에 가속도, 자이로, 기울기 센서가 탑재된 시스템을 구성했다.
+                모터를 제어하는 과정은 포함되지 않았고, 센서를 통해 들어온 raw data에 필터를 거쳐 노이즈를 제거한다.
+                <br>
+                가속도 센서를 통해 입력된 가속도는 Low pass filter를 거치고, 자이로 센서를 통해 입력된 각가속도는 High pass filter를 거친다.
+                이 때, 서로 필터링 되는 주파수 경계를 잘 정해 Complementary filter가 되게 한다.
+                가속도와 각가속도를 통해 각도를 구하는 식을 이용해 출력은 각도로 나오게 된다.
+                이 각도가 차후에 제어과정의 입력이 된다.
+            </p>
+
+
+            <h5>발표 자료</h5>
+            <p>
+                아래 발표자료 영상에 직접 구성한 MATLAB Simulink 필터 시스템과 sin파로 발생시킨 input에 따른 ouput이 비교되어 있다.
+                Analog filter가 아닌 digital filter를 사용하기 위해 sampling한 data 이므로 continuous한 input에 비해 discrete한 ouput이 나온것을
+                볼 수 있다.
+            </p>
+            <div>
+                <iframe width="550px" height="330px" src="https://www.youtube.com/embed/xxslEjCgYFM?list=PLxdB5m160EjRX6fsFnJJ2dcFpma_ApuIS" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br><br>
+
+        </section>
+
+        <!--창설 -->
+        <section class="first ">
+            <h2>창의 설계입문</h2>
+            <hr>
+            <h4>태양전지 자동차</h4>
+            <h5>개요</h5>
+            <p>
+                아직 1학년이므로, 전공 지식이 부족해 태양전지 자동차 키트를 이용하여 하드웨어만 재활용품을 이용해 제작해본다.
+                전체 하드웨어의 무게, 디자인을 가중치에 따라 점수를 매긴다. 총 2번의 경기 순위도 성적에 포함된다.
+                무게와 공기저항을 줄일 수 있는 재활용품으로 빨대를 선택했다.
+            </p>
+            <h5>만드는 과정</h5>
+            <div>
+                <img src="img/suncar.png" alt="suncar" style="width:700px; height:1100px;">
+            </div>
+            <h5>완성작</h5>
+            <div>
+                <img src="img/suncar2.png" alt="suncar2" style="width:500px; height:300px;">
+            </div>
+            <h5>결과</h5>
+            <p>
+                무게는 0.09kg으로 측정되었다.
+                경주 시간을 정오로 착각해 태양열 패널을 0도로 밀착해 부착했는데, 오후 3시였어서 태양열을 많이 받지 못해 출력이 약해져 낭패를 봤다.
+                또한 바퀴가 많이 정교하지 못해 앞으로 갈 수록 방향이 휘어져 도로를 이탈했다.
+                1 경기 4등, 2 경기 7등으로 마무리 했다.
+            </p>
+        </section>
+
+    </article>
+</body>
+
+</html>
