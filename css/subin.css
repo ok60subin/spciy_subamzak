@@ -1,0 +1,162 @@
+hr {
+    border: none;
+}
+
+a {
+    color: mistyrose;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:hover {
+    color: white;
+}
+
+article {
+    padding-top: 40px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+nav {
+    width: 250px;
+    position: fixed;
+    left:0px;
+}
+
+#big_bar {
+    width: 250px;
+    background-color: lightsalmon;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+
+}
+
+#big_bar ul {
+    display: inline-block;
+    color: mistyrose;
+
+}
+
+#big_bar details[open] {
+    color: white;
+}
+
+#big_bar li {
+    font: bold 20px 'poor story', san-serif;
+    display: block;
+    padding: 5px;
+}
+
+#big_bar span {
+    color: mistyrose;
+}
+
+
+
+#big_bar div {
+    text-align: left;
+}
+
+#small_bar ul {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+    font: bold 20px 'poor story', san-serif;
+    height: 60px;
+    background-color: lightcoral;
+    align-items: center;
+    z-index: 3;
+
+}
+
+#small_bar ul li {
+    width: 100px;
+    height: 60px;
+    display: inline-block;
+    margin-right: 10px;
+    padding-top: 15px;
+    text-align: center;
+
+}
+
+#contents {
+    position: absolute;
+    left: 250px;
+    top: 75;
+    color: darkslategray;
+    padding-left: 20px;
+}
+
+#contents h2 {
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    font: bold 40px 'poor story', san-serif;
+    margin-bottom: 20px;
+}
+
+#contents h4 {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    font: bold 20px 'sunflower', san-serif;
+    color: black
+}
+
+#contents h5 {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font: bold 18px 'sunflower', san-serif;
+    color: black
+}
+
+#contents p {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font: bold 15px 'Nanum Gothic', san-serif;
+    line-height: 1.6em;
+    margin-right: 35px;
+}
+
+#contents hr {
+    background: rgb(153, 153, 153);
+    height: 2.5px;
+    width: 270px;
+    margin-top: 0px;
+}
+
+#contents img {
+    width: 280px;
+    height: 200px;
+    margin: 15px 0px 0px 20px;
+    border: solid 10px;
+    border-color: lightgreen;
+}
+
+#contents div {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 20px
+}
+
+#contents iframe {
+    border: solid 10px;
+    border-color: mediumslateblue;
+    margin: 20px 20px 10px 20px;
+}
